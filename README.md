@@ -5,4 +5,5 @@ A database system for managing an e-shop with computer parts. I used PostgreSQL 
 
 I also created a simple DAO layer and Store API to access the eshop via Java. The API uses the simple DAO layer to perform CRUD operations on the database. Examples on how it works can be found on the projects wiki.
 
-![alt text]([http://url/to/img.png](https://github.com/soumarvit/eshop-database-system/blob/main/showcase_images/user_example_1.png))
+## database
+The database models and diagrams can be found [here](https://github.com/soumarvit/eshop-database-system/blob/main/database.pdf).

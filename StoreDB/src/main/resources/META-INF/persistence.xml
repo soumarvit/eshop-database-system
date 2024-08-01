@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+
+    <persistence-unit name="StoreDB">
+        <!-- Configure provider -->
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <!-- Specify entity classes -->
+        <!-- Replace 'YourEntityClass' with the actual entity class names -->
+        <!-- <class>your.package.YourEntityClass</class> -->
+
+        <!-- Configure database connection -->
+        <properties>
+            <!-- Replace these properties with your actual database connection details -->
+            <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://slon.felk.cvut.cz:5432/soumavit"/>
+            <property name="jakarta.persistence.jdbc.user" value="soumavit"/>
+            <property name="jakarta.persistence.jdbc.password" value="notmypassword"/>
+        </properties>
+    </persistence-unit>
+
+</persistence>
